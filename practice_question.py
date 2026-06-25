@@ -182,3 +182,188 @@ for i in range(1, 9):
         print(f"{i} x {j}= {i * j}")
 
     print()
+
+
+lst = [1, 2, 3, 4]
+
+for i in lst[:2]:
+    print(i)
+
+
+total = 0
+
+for i in range(1, 11):
+    if i % 2 != 0:
+        total += i
+
+print(total)
+
+
+total = 0
+
+for i in range(1, 11):
+    if i % 2 == 0:
+        total += i
+
+print(total)
+
+
+text = "Python is fun"
+count = 0
+
+for char in text:
+    if char == " ":
+        count += 1
+
+print(count)
+
+
+
+
+lst = [1, 2, 3, 4]
+result = []
+
+for i in lst:
+    result.append(i ** 3)
+
+print(result)
+
+
+a = "programming"
+
+print(a[::-1])
+
+for i in range(50):
+    if i == 8:
+        break
+
+    print(i)
+
+
+text = "Python"
+
+for char in text:
+    print(char)
+
+
+
+a = ["ram", "shyam", 1, 2]
+
+for i in a:
+    if isinstance(i, str):
+        print("Hello!", i)
+
+
+a = ["ram", "shyam", 1, 2]
+
+result = []
+
+for i in a:
+    result.append("Dr." + str(i))
+
+print(result)
+
+
+lst = [1, 2, 3, 4]
+
+new_list = []
+
+for i in lst:
+    new_list.append(i ** 2)
+
+print(new_list)
+
+
+
+lst1 = [111, 32, -9, -45, -17, 9, 85, -10]
+
+new_list = []
+
+for i in lst1:
+    if i > 0:
+        new_list.append(i)
+
+print(new_list)
+
+
+lst = [0, 1, 2, 3, 4, 5, 6]
+
+for i in lst:
+    if i == 3 or i == 6:
+        continue
+
+    print(i)
+
+
+lst = [1, "a", 2.5, True]
+
+types = []
+
+for i in lst:
+    types.append(type(i))
+
+print(types)
+
+
+
+for i in range(5):
+    print(i)
+
+else:
+    print("Done")
+
+
+for i in range(105, 6, -7):
+    print(i, end=" ")
+
+
+bad_chars = [';', ':', '!', "*"]
+string = "py;th* o:n ! ;py * t*h:o !n"
+
+result = ""
+
+for char in string:
+    if char not in bad_chars and char != " ":
+        result += char
+
+print(result)
+
+
+
+numbers = [1, 2, 3, 4, 5, 6]
+
+even = 0
+odd = 0
+
+for i in numbers:
+    if i % 2 == 0:
+        even += 1
+    else:
+        odd += 1
+
+print("Even:", even)
+print("Odd:", odd)
+
+
+total = 0
+
+for i in range(3, 100):
+    if i % 3 == 0 or i % 5 == 0:
+        total += i
+
+print(total)
+
+even_sum = 0
+odd_sum = 0
+
+for i in range(1, 101):
+    if i % 2 == 0:
+        even_sum += i
+    else:
+        odd_sum += i
+
+print("Even Sum:", even_sum)
+print("Odd Sum:", odd_sum)
+
+
+
